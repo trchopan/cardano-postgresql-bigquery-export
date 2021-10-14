@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "hash",
+    "type": "STRING"
+  },
+  {
+    "name": "block_id",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "block_index",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "out_sum",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "fee",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "deposit",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "size",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "invalid_before",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "invalid_hereafter",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "valid_contract",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "script_size",
+    "type": "NUMERIC"
+  }
+]

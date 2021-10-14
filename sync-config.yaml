@@ -1,0 +1,57 @@
+dbInstance: cardano-db-sync-light
+bqDataset: cardano_mainnet
+gcsBucket: cardano-bucket
+gcsPrefix: mainnet-export
+
+exports:
+  - table: block
+    fields:
+      - encode(hash, 'hex') as hash
+      - epoch_no
+      - slot_no
+      - epoch_slot_no
+      - block_no
+      - previous_id
+      - slot_leader_id
+      - size
+      - time
+      - tx_count
+      - proto_major
+      - proto_minor
+      - vrf_key
+      - encode(op_cert 'hex') as op_cert
+      - op_cert_counter
+
+  - table: tx
+    fields:
+      - encode(hash, 'hex') as hash
+      - block_id
+      - block_index
+      - out_sum
+      - fee
+      - deposit
+      - size
+      - invalid_before
+      - invalid_hereafter
+      - valid_contract
+      - script_size
+
+  - table: tx_metadata
+    fields:
+      - key
+      - json
+      - tx_id
+
+  - table: ma_tx_mint
+    fields:
+      - encode(policy, 'hex') as policy
+      - encode(name 'escape') as name
+      - quantity
+      - tx_id
+
+  - table: ma_tx_out
+    fields:
+      - encode(policy, 'hex') as policy
+      - encode(name 'escape') as name
+      - quantity
+      - tx_out_id

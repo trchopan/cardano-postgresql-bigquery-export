@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "policy",
+    "type": "STRING"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "quantity",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "tx_id",
+    "type": "BIGNUMERIC"
+  }
+]

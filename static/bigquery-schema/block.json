@@ -1,0 +1,66 @@
+[
+  {
+    "name": "id",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "hash",
+    "type": "STRING"
+  },
+  {
+    "name": "epoch_no",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "slot_no",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "epoch_slot_no",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "block_no",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "previous_id",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "slot_leader_id",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "size",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "time",
+    "type": "DATETIME"
+  },
+  {
+    "name": "tx_count",
+    "type": "BIGNUMERIC"
+  },
+  {
+    "name": "proto_major",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "proto_minor",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "vrf_key",
+    "type": "STRING"
+  },
+  {
+    "name": "op_cert",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "op_cert_counter",
+    "type": "BIGNUMERIC"
+  }
+]
